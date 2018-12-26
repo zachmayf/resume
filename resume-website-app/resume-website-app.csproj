@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+    <PackageReference Include="PowerShell" Version="1.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.1.4" />
+    <PackageReference Include="MySql.Data" Version="8.0.13" />
+    <PackageReference Include="MySql.Data.Entity" Version="6.10.8" />
+    <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.13" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\images\assignment3b2-01.jpg" />
+    <Content Remove="wwwroot\images\demoDayGeofilter.png" />
+    <Content Remove="wwwroot\images\GitHub-Mark-120px-plus.png" />
+    <Content Remove="wwwroot\images\GitHub-Mark-Light-120px-plus.png" />
+    <Content Remove="wwwroot\images\In-White-128px-TM.png" />
+    <Content Remove="wwwroot\images\logo.png" />
+    <Content Remove="wwwroot\images\me.png" />
+    <Content Remove="wwwroot\images\opinionbaselogo.png" />
+    <Content Remove="wwwroot\images\owlAssignment.png" />
+    <Content Remove="wwwroot\images\trumpArtwork.jpg" />
+    <Content Remove="Views\Home\Contact.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\images\assignment3b2-01.jpg" />
+    <None Include="wwwroot\images\demoDayGeofilter.png" />
+    <None Include="wwwroot\images\GitHub-Mark-120px-plus.png" />
+    <None Include="wwwroot\images\GitHub-Mark-Light-120px-plus.png" />
+    <None Include="wwwroot\images\In-White-128px-TM.png" />
+    <None Include="wwwroot\images\logo.png" />
+    <None Include="wwwroot\images\me.png" />
+    <None Include="wwwroot\images\opinionbaselogo.png" />
+    <None Include="wwwroot\images\owlAssignment.png" />
+    <None Include="wwwroot\images\trumpArtwork.jpg" />
+  </ItemGroup>
+</Project>

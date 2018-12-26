@@ -1,0 +1,61 @@
+﻿@{
+    ViewData["Title"] = "Portfolio";
+    Layout = "_Layout";
+}
+
+<div class="container">
+    <div class="software-dropdown-container">
+        <button type="button" class="btn light-button" data-toggle="collapse" data-target="#software">
+            <span class="portfolio-header"><i class="fa fa-chevron-down"></i>  Software Development</span>
+        </button>
+        <div id="software" class="collapse out">
+            <div style="float: left;">
+                <img src="../Images/opinionbaselogo.png" style="margin-left: 25px; margin-top: 25px; margin-right: 50px; " alt="OpinionBase Photo" />
+            </div>
+            <div class="portfolio-descriptions">
+                <h3 class="project-headers">OpinionBase</h3>
+                <p class="portfolio-paragraph">
+                    OpinionBase is a blog posting platform that myself and three other classmates created for our Introduction to Sofware Engineering class in the Fall of 2017. It was made using
+                    Ruby on Rails framework, Bootstrap for front-end, and PostgreSQL for data storage. My contributions were front-end development, design, and some basic back-end development with
+                    Ruby to setup login and authentication.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <button type="button" class="btn light-button" data-toggle="collapse" data-target="#design">
+        <span class="portfolio-header"><i class="fa fa-chevron-down"></i>  Design</span>
+    </button>
+    <div id="design" class="collapse out">
+        <div class="design-project">
+            <div class="portfolio-imgs-container">
+                <img class="portfolio-imgs" alt="Travel Poster for Hot Springs Arkansas" src="../Images/assignment3b2-01.jpg" />
+            </div>
+            <div class="portfolio-descriptions">
+                <h3 class="project-headers">Hot Springs Travel Poster</h3>
+                <p class="portfolio-paragraph">
+                    This piece was for my Vector Graphics class in the Fall of 2017.
+                    The objective was to find a place in Arkansas we thought would make a good travel poster and then do a design for a multi-color option,
+                    3-color option, and a 2-color option. This piece is my 2-color option, and ended up actually being my favorite.
+                </p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="design-project">
+            <div class="portfolio-imgs-container">
+                <img class="portfolio-imgs" alt="Owl Tribal Tattoo Assignment" src="../Images/owlAssignment.png" />
+            </div>
+            <div class="portfolio-descriptions">
+                <h3 class="project-headers">Spirit Animal</h3>
+                <p class="portfolio-paragraph">
+                    This piece was for my Vector Graphics class in the Fall of 2017.
+                    The objective was to create a tribal tattoo design that represents your spirit animal.
+                    I took a quiz and got an owl as my spirit animal, so that is what I ended up creatings.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

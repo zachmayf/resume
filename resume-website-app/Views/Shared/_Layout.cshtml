@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - resume_website_app</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+    </environment>
+        <script
+              src="https://code.jquery.com/jquery-3.3.1.min.js"
+              integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+              crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Zach Mayfield" />
+    <meta name="description" content="Zach Mayfield is a Software Developer and UI/UX Designer from Little Rock, Arkansas. This is his portfolio and resume website.">
+  </head>
+  <body>
+
+
+    <nav class="nav">
+        <a class="nav-link item logo" href="@Url.Action("Index", "Home")"><img id="logo" alt="Zach Mayfield's Logo" src="../images/logo.png" /> </a>
+        <button class="mobile-hamburger" onclick="dropdown()"> &#9776; </button>
+        <span class="dropdown-items">
+            <a class="nav-link item" href="@Url.Action("Portfolio", "Home")">Portfolio</a>
+            <a class="nav-link item" href="@Url.Action("Experience", "Home")">Experience</a>
+            <a class="nav-link item" href="@Url.Action("Contact", "Home")">Contact</a>
+            <a class="nav-link item" href="@Url.Action("Blog", "Home")">Blog</a>
+        </span>
+          <!-- <div class="social-icons nav-link">
+            <a class="" href="#"><img class="social-icon" alt="Link to Zach Mayfield's GitHub" src="/Users/zachmayfield/Documents/Mayfield/assets/imgs/GitHub-Mark-Light-120px-plus.png" /></a>
+            <a class="" href="#"><img class="social-icon" alt="Link to Zach Mayfield's Linked In" src="/Users/zachmayfield/Documents/Mayfield/assets/imgs/In-White-128px-TM.png" /></a>
+          </div> -->
+    </nav>
+</body>
+@RenderBody()
+</html>
